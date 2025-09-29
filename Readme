@@ -1,0 +1,31 @@
+Doodle Jump Clone 🚀
+A classic Doodle Jump game built from scratch using HTML5 Canvas, CSS, and JavaScript. Jump on platforms, avoid falling, and aim for the highest score!
+
+🕹️ Live Demo: https://admirable-pika-c55202.netlify.app/
+Click here to play the game!
+
+✨ Features
+Endless Gameplay: Keep jumping upwards to build your score.
+
+Fully Responsive: Perfectly adapts to any screen size, from mobile to desktop.
+
+Persistent High Score: Your high score is saved in the browser using localStorage.
+
+Multiple Platform Types:
+
+Normal Platforms
+
+Horizontally Moving Platforms
+
+Broken Platforms that disappear after one jump.
+
+Sound Effects: Audio feedback for jumping and game over states.
+
+Interactive Screens: Clean start and game over screens for a complete user experience.
+
+💻 Tech Stack
+HTML5 (Canvas API)
+
+CSS3
+
+JavaScript (Vanilla JS)
