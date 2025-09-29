@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+}
+
+#board {
+    background-image: url("./xyz.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: bisque;
+}
