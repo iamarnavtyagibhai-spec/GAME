@@ -135,7 +135,7 @@ function runGame() {
     platformArray = platformArray.filter(p => p.y < boardHeight && !p.isBroken);
     
     
-    while (platformArray.length < 30) {  
+    while (platformArray.length < 70) {  
         newPlatform();
     }
 
@@ -174,7 +174,7 @@ function placePlatforms() {
     platformArray.push(platform);
 
      
-    for (let i = 0; i < 30; i++) {  
+    for (let i = 0; i < 70; i++) {  
         let playAreaWidth = Math.min(boardWidth, 400);
         let playAreaXStart = (boardWidth - playAreaWidth) / 2;
         let randomX = playAreaXStart + Math.floor(Math.random() * playAreaWidth);
