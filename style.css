@@ -1,12 +1,12 @@
 body {
-    /* Body se default margin hata do taaki koi extra space na rahe */
+     
     margin: 0;
-    /* Agar galti se scrollbar aaye to use chhupa do */
+     
     overflow: hidden; 
 }
 
 #board {
-    /* Background image ab seedhe canvas par laga do */
+     
     background-image: url("./xyz.jpg");
     background-size: cover;
     background-position: center;

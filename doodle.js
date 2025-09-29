@@ -1,7 +1,7 @@
 let board;
 let context;
 
-// NEW: Game ab poori screen ka size lega
+ 
 let boardWidth = window.innerWidth;
 let boardHeight = window.innerHeight;
 
@@ -134,8 +134,8 @@ function runGame() {
 
     platformArray = platformArray.filter(p => p.y < boardHeight && !p.isBroken);
     
-    // CHANGE: Screen par hamesha zyada platforms rakho
-    while (platformArray.length < 12) { // 7 se badhakar 12 kar diya
+    
+    while (platformArray.length < 30) {  
         newPlatform();
     }
 
@@ -173,8 +173,8 @@ function placePlatforms() {
     }
     platformArray.push(platform);
 
-    // CHANGE: Shuru mein zyaada platforms banao
-    for (let i = 0; i < 10; i++) { // 6 se badhakar 10 kar diya
+     
+    for (let i = 0; i < 30; i++) {  
         let playAreaWidth = Math.min(boardWidth, 400);
         let playAreaXStart = (boardWidth - playAreaWidth) / 2;
         let randomX = playAreaXStart + Math.floor(Math.random() * playAreaWidth);
