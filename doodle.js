@@ -133,7 +133,9 @@ function runGame() {
     }
 
     platformArray = platformArray.filter(p => p.y < boardHeight && !p.isBroken);
-    while (platformArray.length < 7) { // Screen par hamesha 7 platforms rakho
+    
+    // CHANGE: Screen par hamesha zyada platforms rakho
+    while (platformArray.length < 12) { // 7 se badhakar 12 kar diya
         newPlatform();
     }
 
@@ -171,8 +173,8 @@ function placePlatforms() {
     }
     platformArray.push(platform);
 
-    for (let i = 0; i < 6; i++) { // Shuru mein 6 platforms banao
-        // CHANGE: Platforms ko sirf beech ke area mein banane ka logic
+    // CHANGE: Shuru mein zyaada platforms banao
+    for (let i = 0; i < 10; i++) { // 6 se badhakar 10 kar diya
         let playAreaWidth = Math.min(boardWidth, 400);
         let playAreaXStart = (boardWidth - playAreaWidth) / 2;
         let randomX = playAreaXStart + Math.floor(Math.random() * playAreaWidth);
@@ -190,7 +192,6 @@ function placePlatforms() {
 }
 
 function newPlatform() {
-    // CHANGE: Naye platforms ko bhi sirf beech ke area mein banane ka logic
     let playAreaWidth = Math.min(boardWidth, 400);
     let playAreaXStart = (boardWidth - playAreaWidth) / 2;
     let randomX = playAreaXStart + Math.floor(Math.random() * playAreaWidth);
