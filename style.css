@@ -1,14 +1,17 @@
 body {
-     
     margin: 0;
-     
-    overflow: hidden; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("mbg.png");
 }
 
 #board {
-     
     background-image: url("bg.png");
     background-size: cover;
     background-position: center;
     background-color: bisque;
+    border: 2px solid black;
 }
