@@ -77,27 +77,27 @@ window.onload = function () {
     }
 
     doodlerRightImg = new Image();
-    doodlerRightImg.src = "./doodler-right.png";
+    doodlerRightImg.src = "photos/doodler-right.png";
     doodlerRightImg.onload = onImageLoad;
 
     doodlerLeftImg = new Image();
-    doodlerLeftImg.src = "./doodler-left.png";
+    doodlerLeftImg.src = "photos/doodler-left.png";
     doodlerLeftImg.onload = onImageLoad;
 
     platformImg = new Image();
-    platformImg.src = "./platform.png";
+    platformImg.src = "photos/platform.png";
     platformImg.onload = onImageLoad;
 
     springImg = new Image();
-    springImg.src = "./spring.png";
+    springImg.src = "photos/spring.png";
     springImg.onload = onImageLoad;
 
     cloudImg = new Image();
-    cloudImg.src = "./cloud.png";
+    cloudImg.src = "photos/cloud.png";
     cloudImg.onload = onImageLoad;
 
     enemyImg = new Image();
-    enemyImg.src = "./enemy.png";
+    enemyImg.src = "photos/enemy.png";
     enemyImg.onload = onImageLoad;
 };
 
@@ -105,10 +105,10 @@ function setupGame() {
     doodler.img = doodlerRightImg;
     velocityY = initialVelocityY;
 
-    startSound = new Audio("./start.wav");
-    jumpSound = new Audio("./jump.mp3");
-    springSound = new Audio("./spring.mp3");
-    gameOverSound = new Audio("./over.wav");
+    startSound = new Audio("audio/start.wav");
+    jumpSound = new Audio("audio/jump.mp3");
+    springSound = new Audio("audio/spring.mp3");
+    gameOverSound = new Audio("audio/over.wav");
 
     placePlatforms();
     for (let i = 0; i < 5; i++) {
